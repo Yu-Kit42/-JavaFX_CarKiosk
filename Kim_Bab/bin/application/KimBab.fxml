@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KimbabController">
+   <children>
+      <Button fx:id="BtnOrder" layoutX="484.0" layoutY="434.0" mnemonicParsing="false" onAction="#BtnOrderAction" prefHeight="37.0" prefWidth="130.0" text="계산">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtOrder" layoutX="484.0" prefHeight="358.0" prefWidth="317.0" />
+      <TabPane prefHeight="400.0" prefWidth="419.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="밥류">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="31.0" layoutY="62.0" text="돈까스정식&#10;-7000-" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="198.0" text="짜장밥&#10;-6000-" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="130.0" text="제육볶음밥&#10;-6500-" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Btn1_1M" alignment="CENTER" contentDisplay="RIGHT" layoutX="194.0" layoutY="62.0" mnemonicParsing="false" onAction="#Btn1_1MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn1_1P" alignment="CENTER" contentDisplay="RIGHT" layoutX="139.0" layoutY="62.0" mnemonicParsing="false" onAction="#Btn1_1PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn1_2" alignment="CENTER" contentDisplay="RIGHT" layoutX="194.0" layoutY="136.0" mnemonicParsing="false" onAction="#Btn1_2MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn1_4" alignment="CENTER" contentDisplay="RIGHT" layoutX="194.0" layoutY="266.0" mnemonicParsing="false" onAction="#Btn1_4MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn1_2P" alignment="CENTER" contentDisplay="RIGHT" layoutX="139.0" layoutY="136.0" mnemonicParsing="false" onAction="#Btn1_2PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn1_3P" alignment="CENTER" contentDisplay="RIGHT" layoutX="139.0" layoutY="204.0" mnemonicParsing="false" onAction="#Btn1_3PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="260.0" text="김치찌개&#10;-5500-&#10;" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Btn1_4P" alignment="CENTER" contentDisplay="RIGHT" layoutX="139.0" layoutY="266.0" mnemonicParsing="false" onAction="#Btn1_4PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn1_3" alignment="CENTER" contentDisplay="RIGHT" layoutX="194.0" layoutY="204.0" mnemonicParsing="false" onAction="#Btn1_3MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="분식">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="334.0" prefWidth="250.0">
+                     <children>
+                        <Button fx:id="Btn2_1P" layoutX="126.0" layoutY="58.0" mnemonicParsing="false" onAction="#Btn2_1PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn2_1M" layoutX="189.0" layoutY="58.0" mnemonicParsing="false" onAction="#Btn2_1MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn2_3P" layoutX="126.0" layoutY="195.0" mnemonicParsing="false" onAction="#Btn2_3PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn2_2P" layoutX="126.0" layoutY="132.0" mnemonicParsing="false" onAction="#Btn2_2PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn2_3M" layoutX="189.0" layoutY="195.0" mnemonicParsing="false" onAction="#Btn2_3MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn2_2M" layoutX="189.0" layoutY="132.0" mnemonicParsing="false" onAction="#Btn2_2MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="125.0" text="순대&#10;-6500-" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="259.0" text="라면정식&#10;-5500-" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="193.0" text="떡볶이&#10;-6000-" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="60.0" text="분식정식&#10;-7000-" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="Btn2_4P" layoutX="126.0" layoutY="265.0" mnemonicParsing="false" onAction="#Btn2_4PAction" prefHeight="42.0" prefWidth="42.0" text="+">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Btn2_4M" layoutX="189.0" layoutY="265.0" mnemonicParsing="false" onAction="#Btn2_4MAction" prefHeight="42.0" prefWidth="42.0" text="-">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <Button fx:id="BtnCansel" layoutX="663.0" layoutY="434.0" mnemonicParsing="false" onAction="#BtnCanselAction" prefHeight="37.0" prefWidth="123.0" text="취소">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="501.0" layoutY="385.0" text="총액">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="757.0" layoutY="398.0" text="원">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblamount" alignment="BASELINE_RIGHT" contentDisplay="RIGHT" layoutX="543.0" layoutY="377.0" prefHeight="42.0" prefWidth="201.0" text="0">
+         <font>
+            <Font name="Arial Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutY="389.0" prefHeight="111.0" prefWidth="342.0" text="KimBub_ChanKok" textFill="#fa00ff">
+         <font>
+            <Font name="Arial Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="418.0" prefHeight="25.0" prefWidth="142.0" text="\@(((((((((((((@">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="436.0" prefHeight="25.0" prefWidth="142.0" text="\@(((((((((((((@">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="455.0" prefHeight="25.0" prefWidth="142.0" text="\@(((((((((((((@">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
